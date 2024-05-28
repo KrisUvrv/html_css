@@ -6,57 +6,77 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>2-Form</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
 
-<form action="/register" method="get">
-    <h1>Регистрация</h1>
-    <h2>Уже есть аккаунт? <a href="#">Войти</a></h2>
-    <div>
-        <label for="username"></label>
-        <input
-                id="username"
-                type="text"
-                placeholder="Пользователь"
-                name="username"
-                value="Мой компания"
-        />
-    </div>
-    <div>
-        <label for="first name"></label>
-        <input
-                id="first name"
-                type="text"
-                placeholder="Имя"
-                name="first name"
-        />
+    <main class="container">
+        <form action="/register" method="get">
+            <h1>Регистрация</h1>
+            <h2>Уже есть аккаунт? <a href="#">Войти</a></h2>
 
-        <label for="last name"></label>
-        <input
-                id="last name"
-                type="text"
-                placeholder="Фамилия"
-                name="last name"
-        />
-    </div>
-    <div>
-        <label for="email"></label>
-        <input
-                id="email"
-                type="email"
-                placeholder="E-mail"
-                name="email"
-        />
-    </div>
-    <button>Зарегистрироваться</button>
-    <div>
-        <input
-                id="agree"
-                type="checkbox"
-        />
-        <label for="agree">Я прочитал и принимаю <a href="#">Условия использования</a></label>
-    </div>
-</form>
+            <div class="form-container">
+                <div>
+                    <label for="username"></label>
+                    <input
+                            id="username"
+                            type="text"
+                            placeholder="Пользователь"
+                            name="username"
+                            value="Мой компания"
+                            class="input"
+                    />
+                </div>
+
+                <div class="name-container">
+                    <label for="firstname"></label>
+                    <input
+                            id="firstname"
+                            type="text"
+                            placeholder="Имя"
+                            name="first name"
+                            class="input firstName"
+                    />
+
+                    <label for="lastname"></label>
+                    <input
+                            id="lastname"
+                            type="text"
+                            placeholder="Фамилия"
+                            name="last name"
+                            class="input lastName"
+                    />
+                </div>
+
+                <div>
+                    <label for="email"></label>
+                    <input
+                            id="email"
+                            type="email"
+                            placeholder="E-mail"
+                            name="email"
+                            class="input"
+                    />
+                </div>
+
+                <button class="item">
+                    <span class="button-text">Зарегистрироваться</span>
+                    <img src="./images/Arrow.svg" alt="Зарегистрироваться">
+                </button>
+
+                <div class="agree-container">
+                    <input
+                            id="agree"
+                            type="checkbox"
+                    />
+                    <label for="agree">Я прочитал и принимаю <a href="#" class="agreeLink">Условия использования</a></label>
+                </div>
+
+            </div>
+
+        </form>
+    </main>
+
 
 </body>
 </html>
