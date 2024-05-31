@@ -1,43 +1,68 @@
 body {
     background: linear-gradient(180deg, #374151 0%, #111827 100%);
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #FFFFFF;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
 }
 
 * {
     box-sizing: border-box;
 }
 
-h1 {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 38px;
-    text-align: center;
-    margin: 0 0 30px 0;
-}
-
 header {
-    padding: 50px 100px;
-    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1440px;
+    margin: 0 0 80px;
 }
 
-.header-container {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    width: 150px;
+.logo {
+    background: #4B5563;
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+
+.text_logo {
+    font-size: 18px;
+}
+
+.menu-left {
+    display: flex;
+    gap: 77px;
+    align-items: center;
 }
 
 nav {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    gap: 50px;
     margin: 0;
-    display: inline-block;
+    padding: 0;
 }
 
 a {
@@ -49,16 +74,9 @@ a {
     color: #FFFFFF;
 }
 
-footer p {
-    margin: 0 0 242px 0;
-    text-align: center;
-    color: #FFFFFF60
-}
-
 input {
     border: none;
     background: transparent;
-    margin: 10px;
     color: #FFFFFF60;
 }
 
@@ -73,44 +91,16 @@ input:focus {
     width: 224px;
     height: 40px;
     border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
 }
 
-.input-container img {
-    margin-left: 18px;
-}
-
-
-.logo {
-    background: #4B5563;
-    width: 35px;
-    height: 35px;
-    border-radius: 3px;
-    font-size: 18px;
-    text-align: center;
-}
-
-.logo-container {
-    display: inline-block;
-}
-
-.text_logo {
-    font-size: 18px;
-}
-
-.theme-date {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 38px;
-    text-align: center;
-    margin: 0 0 14px 0;
-    color: #FFFFFF60
-}
-
-.author-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    object-fit: cover;
+.author-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
     margin: 0 0 28px 0;
 }
 
@@ -118,9 +108,49 @@ input:focus {
     margin: 0 0 3px 0;
 }
 
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+    padding: 0;
+}
+
 .author-title {
-    margin: 0 0 28px 0;
+    color: #FFFFFF60;
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.article-container {
+    width: 708px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-date {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 38px;
+    margin: 0 0 14px 0;
     color: #FFFFFF60
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 69px 0;
 }
 
 .img-monitor {
@@ -128,30 +158,32 @@ input:focus {
     height: 594px;
     border-radius: 5px;
     object-fit: cover;
-    margin: 0 0 69px 0;
 }
 
-.first-p {
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.text-container p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.text-container p:first-child {
     font-size: 20px;
-    font-weight: 400;
     line-height: 32px;
-    margin: 0 0 50px 0;
 }
 
-.second-p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    margin: 0 0 50px 0;
+footer {
+    margin-top: 100px;
 }
 
-.third-p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    margin: 0 0 100px 0;
+footer p {
+    margin: 0;
+    text-align: center;
+    color: #FFFFFF60
 }
-
-
-
-
