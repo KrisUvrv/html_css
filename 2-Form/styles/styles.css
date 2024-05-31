@@ -1,10 +1,13 @@
 body {
     background: linear-gradient(90deg, #FFA5A5, #FDC5C5);
+    font-family: "Open Sans", sans-serif;
 }
 
 * {
     box-sizing: border-box;
 }
+
+
 
 .container {
     display: flex;
@@ -16,7 +19,7 @@ body {
 form {
     background: #FFFEFE;
     border-radius: 10px;
-    box-shadow: 0px 4px 4px 0px #00000040;
+    box-shadow: 0 4px 4px 0 #00000040;
     padding: 72px 95px;
     display: flex;
     flex-direction: column;
@@ -24,7 +27,6 @@ form {
 
 h1 {
     color: #333333;
-    font-family: 'Open Sans', sans-serif;
     font-size: 36px;
     font-weight: 700;
     text-align: center;
@@ -34,12 +36,13 @@ h1 {
 
 h2  {
     color: #666666;
-    font-family: Open Sans, sans-serif;
     font-size: 18px;
     font-weight: 400;
-    text-align: center;
     margin: 0 0 47px 0;
     line-height: 24px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
 }
 
 a {
@@ -54,7 +57,6 @@ a {
 
 .input {
     background: #F5F5F5;
-    font-family: Open Sans, sans-serif;
     font-size: 16px;
     text-align: left;
     border: 1px;
@@ -85,7 +87,6 @@ a {
 }
 
 ::placeholder {
-    font-family: Open Sans, sans-serif;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -108,7 +109,6 @@ button {
 .button-text {
     flex: 1;
     text-align: center;
-    font-family: Open Sans, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
