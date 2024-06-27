@@ -26,11 +26,21 @@
     font-weight: 800;
     cursor: pointer;
     height: 48px;
+    white-space: nowrap;
+}
+
+.button:hover {
+    background-color: var(--color-main-pale);
 }
 
 .button-accent {
     color: var(--color-main);
     background-color: var(--color-accent);
+}
+
+.button-accent:hover {
+    background-color: #0C47AFFF;
+
 }
 
 .separator {

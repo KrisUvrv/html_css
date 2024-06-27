@@ -252,7 +252,38 @@
 
 .section_excel-finio__container_img {
     margin: 64px 0;
+    position: relative;
+}
+
+.section_excel-finio__container_img_excel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.section_excel-finio__container_img_finio {
+    border-radius: 16px;
     width: 100%;
+}
+
+.section_excel-finio__container_img_arrows {
+    position: absolute;
+    top: calc(50% - 52px);
+    left: calc(50% - 52px);
+    cursor: pointer;
+}
+
+.section_excel-finio__container_img_arrows:hover {
+    transform: scale(1.05);
+}
+
+.section_excel-finio__container_img_line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: auto;
 }
 
 .section_excel-finio__heading {
@@ -455,7 +486,7 @@
 
 .section_reviews__arrows {
     position: absolute;
-    top: calc(50% - 52px)
+    top: calc(50% - 52px);
 }
 
 .section_reviews__arrows:hover {
